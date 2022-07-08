@@ -7,6 +7,9 @@ Basic to do list made with react which allows user to add new tasks,mark them as
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
+## Demo
+
+To go to the website, click on the link: [todo-liist-react](https://alicjakoziolek.github.io/todo-list-react/).
 
 ## Available Scripts
 
