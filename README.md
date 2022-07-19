@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo
 
-To go to the website, click on the link: [todo-liist-react](https://alicjakoziolek.github.io/todo-list-react/).
+To go to the website, click on the link: [todo-list-react](https://alicjakoziolek.github.io/todo-list-react/).
 
 ## Available Scripts
 
