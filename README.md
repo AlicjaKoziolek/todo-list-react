@@ -2,7 +2,7 @@
 
 ## Description
 
-Basic to do list made with react which allows user to add new tasks,mark them as done,delete,hide done tasks and turn all tasks done with one button.
+Basic to do list made with react which allows user to add new tasks, mark them as done, delete, hide done tasks and turn all tasks done with one button.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
