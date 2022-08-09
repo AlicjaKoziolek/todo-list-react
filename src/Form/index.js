@@ -12,8 +12,6 @@ const Form = ({ addNewTask }) => {
     addNewTask(trimmedNewTaskContent);
     setNewTaskContent("");
 
-    addNewTask(newTaskContent.trim());
-    setNewTaskContent("");
   };
 
   return (
