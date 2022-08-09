@@ -1,11 +1,14 @@
-# TASK LIST 
+# TASK LIST
 
 ## Description
 
-Basic to do list made with react which allows user to add new tasks, mark them as done, delete, hide done tasks and turn all tasks done with one button.
+Basic to do list made with react which allows user to add new tasks, mark them as done, delete, hide done tasks and turn all tasks done with one button. The project was created in Polish language.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Instructions for using the task list
+
+![task-list-react](https://i.imgur.com/cqYReuM.gif)
 
 ## Demo
 
