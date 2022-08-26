@@ -9,12 +9,11 @@ import Tasks from "./Tasks";
 function App() {
   const [hideDone, setHideDone] = useState(false);
 
-  const tasksFromLocalStorage =localStorage.getItem("tasks");
+  const tasksFromLocalStorage = localStorage.getItem("tasks");
 
   const [tasks, setTasks] = useState(
-    tasksFromLocalStorage
-    ? JSON.parse(tasksFromLocalStorage)
-    : []
+    JSON.parse(tasksFromLocalStorage)
+    || []
   );
 
   useEffect(() => {
