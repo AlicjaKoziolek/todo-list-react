@@ -3,6 +3,7 @@ import { Button, Input, Inside } from "./styled";
 
 const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
+  
   const inputRef = useRef(null);
 
   const onFormSubmit = (event) => {
@@ -21,6 +22,7 @@ const Form = ({ addNewTask }) => {
       <Input
         ref={inputRef}
         value={newTaskContent}
+        autoFocus
         placeholder="Co jest do zrobienia?"
         onChange={({ target }) => setNewTaskContent(target.value)}
       />
