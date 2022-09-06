@@ -1,19 +1,19 @@
 import React from "react";
-import { Button } from "./styled";
+import { StyledButton } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) =>
   tasks.length > 0 && (
     <React.Fragment>
       <div>
-        <Button onClick={toggleHideDone}>
+        <StyledButton onClick={toggleHideDone}>
           {hideDone ? "Pokaż" : "Ukryj"} ukończone
-        </Button>
-        <Button
+        </StyledButton>
+        <StyledButton
           onClick={setAllDone}
           disabled={tasks.every(({ done }) => done)}
         >
           Ukończ wszystkie
-        </Button>
+        </StyledButton>
       </div>
     </React.Fragment>
   );

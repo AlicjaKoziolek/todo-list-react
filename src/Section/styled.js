@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Segment = styled.section`
+export const StyledSection = styled.section`
   margin: 10px 0;
   background-color: white;
   word-break: break-word;
@@ -10,7 +10,7 @@ export const Segment = styled.section`
   }
 `;
 
-export const Header = styled.header`
+export const StyledHeader = styled.header`
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 20px;
@@ -19,13 +19,13 @@ export const Header = styled.header`
   border-bottom: 1px solid #dddada;
 `;
 
-export const Title = styled.h2`
+export const StyledTitle = styled.h2`
   font-size: 20px;
   margin: 0;
   padding: 20px;
 `;
 
-export const Inside = styled.div`
+export const SectionBody = styled.div`
   padding: 20px;
   padding-top: 20px;
 `;
