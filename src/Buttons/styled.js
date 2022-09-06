@@ -5,13 +5,12 @@ export const StyledButton = styled.button`
   color: teal;
   border: none;
   margin: 0 0 0 20px;
+  padding: 10px;
   transition: color 0.3s;
-  padding: 20px;
   cursor: pointer;
 
   @media (max-width: 767px) {
     flex-basis: 100%;
-    margin: 10px;
   }
 
   &:hover {
@@ -24,5 +23,13 @@ export const StyledButton = styled.button`
 
   &:disabled {
     color: #dddada;
+  }
+`;
+
+export const StyledSection = styled.div`
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;

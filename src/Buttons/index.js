@@ -1,10 +1,10 @@
 import React from "react";
-import { StyledButton } from "./styled";
+import { StyledButton, StyledSection } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) =>
   tasks.length > 0 && (
-    <React.Fragment>
-      <div>
+    <>
+      <StyledSection>
         <StyledButton onClick={toggleHideDone}>
           {hideDone ? "Pokaż" : "Ukryj"} ukończone
         </StyledButton>
@@ -14,8 +14,8 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) =>
         >
           Ukończ wszystkie
         </StyledButton>
-      </div>
-    </React.Fragment>
+      </StyledSection>
+    </>
   );
 
 export default Buttons;
