@@ -14,48 +14,56 @@ export const StyledItem = styled.li`
   padding: 10px;
   border-bottom: 1px solid #dddada;
 
-  ${({ hidden }) => hidden && css`
+  ${({ hidden }) =>
+    hidden &&
+    css`
       display: none;
     `}
 `;
 
 export const StyledContent = styled.span`
-  ${({ done }) => done && css`
+  ${({ done }) =>
+    done &&
+    css`
       text-decoration: line-through;
     `}
 `;
 
 export const StyledButton = styled.button`
-    border: none;
-    color: white;
-    padding: 0;
-    width: 30px;
-    height: 30px;
-    transition: background 0.5s;
+  border: none;
+  color: ${({ theme }) => theme.color.white};
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  transition: background 0.5s;
 
-    ${({toggleDone}) => toggleDone && css`
-    background-color: hsl(120, 63%, 36%);
+  ${({ toggleDone }) =>
+    toggleDone &&
+    css`
+      background-color: ${({ theme }) => theme.color.forestGreen};
 
-    &:hover {
-        background-color:  hsl(120, 63%, 40%);
+      &:hover {
+        filter: brightness(110%);
         cursor: pointer;
-    }
+      }
 
-    &:active {
-        background-color:  hsl(120, 63%, 45%);
-    }
+      &:active {
+        filter: brightness(120%);
+      }
     `}
 
-    ${({remove}) => remove && css`
-        background-color:  hsl(348, 91%, 46%);
+  ${({ remove }) =>
+    remove &&
+    css`
+        background-color: ${({ theme }) => theme.color.redRibbon};
 
      &:hover {
-        background-color:  hsl(348, 91%, 57%);
+       filter: brightness(110%);
         cursor: pointer;
      }   
 
      &:active {
-        background-color:  hsl(348, 91%, 51%);
+        filter: brightness(120%);
      }
    }
     `}

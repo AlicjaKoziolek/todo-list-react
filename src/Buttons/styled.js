@@ -2,32 +2,32 @@ import styled from "styled-components";
 
 export const StyledButton = styled.button`
   background-color: transparent;
-  color: teal;
+  color: ${({ theme }) => theme.color.teal};
   border: none;
   margin: 0 0 0 20px;
   padding: 10px;
   transition: color 0.3s;
   cursor: pointer;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     flex-basis: 100%;
   }
 
   &:hover {
-    color: hsl(180, 100%, 30%);
+    filter: brightness(110%);
   }
 
   &:active {
-    color: hsl(180, 100%, 35%);
+    filter: brightness(120%);
   }
 
   &:disabled {
-    color: #dddada;
+    color: ${({ theme }) => theme.color.alto};
   }
 `;
 
 export const StyledSection = styled.div`
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: flex;
     flex-direction: column;
     align-items: center;

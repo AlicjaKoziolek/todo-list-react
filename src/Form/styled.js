@@ -5,7 +5,7 @@ export const StyledForm = styled.form`
   grid-template-columns: 1fr auto;
   grid-gap: 20px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: auto;
   }
 `;
@@ -19,17 +19,17 @@ export const StyledButton = styled.button`
   border: none;
   padding: 10px;
   background-color: hsl(180, 100%, 25%);
-  color: white;
+  color: ${({ theme }) => theme.color.white};
   transition: 1s;
   transform: 2s;
 
   &:hover {
-    background-color: hsl(180, 100%, 30%);
+    filter: brightness(110%);
     transform: scale(110%);
     cursor: pointer;
   }
 
   &:active {
-    background-color: hsl(180, 100%, 35%);
-}
+    filter: brightness(120%);
+  }
 `;
