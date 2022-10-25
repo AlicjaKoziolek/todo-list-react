@@ -6,15 +6,15 @@ import { nanoid } from "@reduxjs/toolkit";
 
 const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
-
   const inputRef = useRef(null);
 
   const dispatch = useDispatch();
 
   const onFormSubmit = (event) => {
     event.preventDefault();
+
     const trimmedNewTaskContent = newTaskContent.trim();
-    if (trimmedNewTaskContent === "") {
+    if (!trimmedNewTaskContent) {
       return;
     }
 
