@@ -58,3 +58,4 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - Create-React-App
 - Babel
 - Webpack
+- Redux
