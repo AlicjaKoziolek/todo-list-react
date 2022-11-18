@@ -1,29 +1,34 @@
-import Tasks from "./features/tasks/Tasks";
-import { HashRouter, Switch, Route, Link, Redirect } from "react-router-dom";
-import Author from "./features/author/Author";
+import TasksPage from "./features/tasks/TasksPage";
+import TaskPage from "./features/tasks/TaskPage";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
+import AuthorPage from "./features/author/AuthorPage";
+import { StyledNavLink } from "./styled";
 
-const App = () => (
+export default () => (
   <HashRouter>
     <nav>
       <ul>
         <li>
-          <Link to="/zadania">Zadania</Link>
+          <StyledNavLink to="/zadania">Zadania</StyledNavLink>
         </li>
         <li>
-          <Link to="/autor">O autorze</Link>
+          <StyledNavLink to="/autor">O autorze</StyledNavLink>
         </li>
       </ul>
       <Switch>
+        <Route path="/zadania/:id">
+          <TaskPage />
+        </Route>
         <Route path="/zadania">
-          <Tasks />
+          <TasksPage />
         </Route>
         <Route path="/autor">
-          <Author />
+          <AuthorPage />
         </Route>
-        <Redirect to="/zadania" />
+        <Route path="/">
+          <Redirect to="/zadania" />
+        </Route>
       </Switch>
     </nav>
   </HashRouter>
 );
-
-export default App;
