@@ -10,7 +10,7 @@ export default () => (
       body={
         <>
           <p>
-            Od ponad 10 lat jestem <strong>szczęśliwą żoną i mamą.</strong>
+            Od ponad 10 lat jestem <strong>szczęśliwą żoną i mamą. </strong> 
             Uwielbiam spędzać czas w gronie rodziny i znajomych 👨‍👩‍👧‍👦.
           </p>
           <p>
