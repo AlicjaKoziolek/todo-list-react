@@ -18,8 +18,8 @@ function TaskPage() {
         body={
           !!task && (
             <>
-              <strong>Zadanie ukończone: </strong>
-              {task.done ? "Tak" : "Nie"}
+              <strong>Status zadania: </strong>
+              {task.done ? "Ukończone" : "Nieukończone"}
             </>
           )
         }
