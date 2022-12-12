@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledButton, StyledSection } from "./styled";
+import { StyledButtons, StyledSection} from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 import {
   toggleHideDone,
@@ -7,8 +7,9 @@ import {
   selectAreTasksEmpty,
   selectHideDone,
   selectIsEveryTaskDone,
-  fetchExampleTasks,
 } from "../../tasksSlice";
+import { Wrapper } from "./styled";
+import { Button } from "../Button";
 
 const Buttons = () => {
   const areTasksEmpty = useSelector(selectAreTasksEmpty);
@@ -19,22 +20,21 @@ const Buttons = () => {
 
   return (
     <StyledSection>
-      <StyledButton onClick={() => dispatch(fetchExampleTasks())}>
-        Przykładowe zadania
-      </StyledButton>
-      {!areTasksEmpty && (
-        <>
-          <StyledButton onClick={() => dispatch(toggleHideDone())}>
-            {hideDone ? "Pokaż" : "Ukryj"} ukończone
-          </StyledButton>
-          <StyledButton
-            onClick={() => dispatch(setAllDone())}
-            disabled={isEveryTaskDone}
-          >
-            Ukończ wszystkie
-          </StyledButton>
-        </>
-      )}
+      <StyledButtons>
+        {!areTasksEmpty && (
+          <>
+            <Button onClick={() => dispatch(toggleHideDone())}>
+              {hideDone ? "Pokaż" : "Ukryj"} ukończone
+            </Button>
+            <Button
+              onClick={() => dispatch(setAllDone())}
+              disabled={isEveryTaskDone}
+            >
+              Ukończ wszystkie
+            </Button>
+          </>
+        )}
+      </StyledButtons>
     </StyledSection>
   );
 };
