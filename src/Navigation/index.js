@@ -5,10 +5,10 @@ export default () => {
     <nav>
       <List>
         <Item>
-          <StyledNavLink to="zadania">Zadania</StyledNavLink>
+          <StyledNavLink to="/zadania">Zadania</StyledNavLink>
         </Item>
         <Item>
-          <StyledNavLink to="autor">O autorze</StyledNavLink>
+          <StyledNavLink to="/autor">O autorze</StyledNavLink>
         </Item>
       </List>
     </nav>
