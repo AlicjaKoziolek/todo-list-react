@@ -2,13 +2,13 @@
 
 ## Description
 
-Basic to do list made with react which allows user to add new tasks, mark them as done, delete, hide done tasks and turn all tasks done with one button. The project was created in Polish language.
+Basic to do list made with react which allows user to add new tasks, mark them as done, delete, hide done tasks and turn all tasks done with one button. The list has been enriched with an additional button that allows you to download sample tasks. After clicking on the link of a given task, we will be redirected to a new page where we can see the details of the task. The website also has a navigation that allows you to move between two subpages. The project was created in Polish language.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Instructions for using the task list
 
-![task-list-react](https://i.imgur.com/cqYReuM.gif)
+![task-list-react](https://i.imgur.com/qBxUIxC.gif)
 
 ## Demo
 
@@ -58,4 +58,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - Create-React-App
 - Babel
 - Webpack
+- Styled-Components
 - Redux
+- Redux-Saga
+- Redux-Router
+- Redux-Toolkit
+- Local Storage
