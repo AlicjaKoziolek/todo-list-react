@@ -15,9 +15,9 @@ export default () => (
           </p>
           <p>
             W długie jesienno- zimowe wieczory często gramy w gry planszowe 🎲.
-            Posiadam również <strong>zamiłowania kulinarne</strong>- w
+            Posiadam również <strong>zamiłowania kulinarne</strong> - w
             szczególności uwielbiam robić torty okolicznościowe 🎂.
-            <strong> Moją pasją jest również sport</strong>- w szczególności
+            <strong> Moją pasją jest również sport</strong> - w szczególności
             fitness, rower i łyżworolki 🧘‍♀️🚵‍♀️.
           </p>
           <p>
